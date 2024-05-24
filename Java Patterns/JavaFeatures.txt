@@ -1,0 +1,84 @@
+1.Simple
+less memory and less execution time
+Remove all confudion features like Pointers ,Operator overloading
+Take Simple synatx form from C and c++
+2.OOP
+.data is represented in the form object
+3.Platform INdependent
+If any PL allow compilation in one Oprating systemand execution in another OP
+4.Arch Nuetral
+Hardware allows like in the one OP
+5.Portable
+allow App under all OP and H/W sysytems
+fixed memory allocation for primitive data types
+6.Robust
+Very good memeory system in heap manga system --- dynamic memory manage system allocate or deallocate at runtime
+
+Good at  exceptional mechanism -- run time error causes handled exception 
+7.Dynamic
+allows memmory allocation primitive data types at runtime
+8.secure
+very good at implicit,web,network security
+9.Multi Threadead
+it helps to reduce the execution time and increase performance
+10.Distributed
+provided separate to preapre distributed app that is J2EE/Java EE
+11.Interpretive
+Java is compilitive and Interpretive
+1.compilitive to translate at high level representation to low level to check developer mistake before execution
+2.to execute java app we need interpretive inside JVM 
+12.High Performance
+1.its rich set of features portable  robust distributed...
+2.its internal components JIT compiler
+
+
+				Java namming convensions
+1.Case sensetive PL
+capital letter-class,abstract class,constant variables,interface,enum ,sub -sequence symbol
+low case -variables,method name,package names,
+mandatory for -pre-defined library,not mandatory for user defined library
+
+we can make API documentation using javadoc comment
+
+Q) in java application to provide a description we have already coomnts then what are the requirements to use Annotations
+----------------------------------------------------------------------------------------
+Ans:
+-----------------------------------------------------
+if we provide description in java application in the form of comments then the comments and its description will be removed by "Lexicaal Analysis".Phase as part of the compilation,it may not be available 	to the generated .class file and upto Runtime of the application
+
+As per requirement if we want to bring description upto .java,.class and runtime we need to use "Annotations"
+
+Q) in java app to bring metadata upto runtime we have already XML  so what is requirement to use "Annotation"
+
+Ans:
+-----------
+
+To provide metadata at runtime of our app if we use XML then we have this problems:
+1.we must learn XML
+2.Every time we have to check XML files are stored at proper locations,if not there may be a chance to get java.io.FileNotException.
+3.Evevry time we haveto whether XML doc is well form doc or not
+4.Every time we have to check whether we are using right Parsing mechanism or not to read data fro XML doc 
+
+			Package Section
+Package is the collection of realted classes and interfaces as a single unit
+Package is a folder contains .class files 	representative class and interfaces 
+
+Advantages:
+1.Modularity
+2.Abstraction
+3.Security
+4.Sharability
+5.Reusibility
+
+In java 2 types of packages 
+1.Pre-defined
+provided by java PL and provided along with java software:java.io, java.util
+2.User defined
+provided by developer for their app requirements
+to declare them we have to use the syntax:   package package_Name
+
+Q)is it possibl e to provide more than one package declaration statement in single java file?
+Ans:no it is not,in java files package declaration must be first statement,we can use them at most one packgae declaration statement
+
+To provide package name java provide convension like our company domain name in reverse in package name
+

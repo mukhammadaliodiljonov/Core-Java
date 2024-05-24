@@ -1,0 +1,290 @@
+Difference with C and C++
+--------------------------
+1.C and C++ are static programming languages but java is a dynamic programming language
+If any programming languages allows memory allocation for primitive data types at compilation time then that programming language is called as Static Programming language.
+
+Ex: C and C++
+
+In C And C++ application memory will allocated for primmitve data types at compilation time.
+
+If any PL allows memory allocation allows for primitive data types at run time that Programming Languages is called as Dynamic Programming Language.
+
+In java Applications, memory will be allocated for primitve data types at runtime only.
+
+Note:
+
+2. Pre_Processor is required in C and C++,but Pre_Processor is not required in JAVA:
+------------------------------------------------------------------------------------
+ Job of the Pre_Processor:
+	Header file
+	eX:STADOI.H
+	conio.h
+	........
+	#include<> statement
+	Ex: #include<stdoi.h>
+	    #include<conio.h>
+	    #include<math.h>
+	    ----------------
+Jov of the Pre-Processor:
+--> It will recognize all #include<> statements which we provided on C and C++ application
+--> It will take all header file names from #include<> statements.
+--> it will search for the specified/required header files in C and C++ softwares.
+--> If the specified header files are not existed in C and C++ Softwares then error will be generated.
+--> If the specified header files are existed in C and C++ softwares then Pre_Processor will load all the specified header files to the memory.
+Note:Loading predefeined libarary at compilatiob time is called as Static Loading 
+
+Conclution:In C and C++ <Pre_Processor is required to recognize #include<> statements in order to load the header files content to the memory 
+
+IN Java:
+	classess and interfaces in the form of the Packages
+	Ex:java.io
+	   java.sql
+	   java.util
+	   ---------	
+	Import statements:
+	Ex:import java.io.*;
+	   import java.util.*;
+	   import java.sql.*;
+	   ------------------
+	   ------------------
+When we compile JAVA program,Job of the Compiler is:
+--> Compiler will recognize all import statements.
+--> Compiler will take the specified package name from import statements.
+--> Compiler will go to JAVA software,where Compiler will check whether these packages are exist or not.
+--> If the sepcified packages are existed in Java Software then compiler will not raise any error and at the same time compiler will not any package contnent to the memory.
+
+When we execute JAVA application,Job of the JVM is:
+--> When the pre-defined classes and intefraces are identified by JVM then JVM will load upto the respective classes and interfaces into the memory
+Note:In java applications,the predefined library is loaded by JVM as per the requirement, this type o floading predefined Libarary at runtime is called as Dynamic loading.
+
+Conclusion:In java Pre_preocessor is not required,beacuse In java header files and #include statements does not exist.
+
+Questions that are asked at interviews 
+
+What are the differnece between #include<> statement and import statement?
+
+Ans:
+-------------------------------------------------------
+1.#include<> statements are existed in C and C++
+  import statements are existed in Java
+
+2.#include<> statements are used to include predefined libraries existed in header files.
+  import statements are used to include predefined libraries existed in classes and interfaces in the form of packages
+
+3.#include<> statements are recognized by Pre_processor.
+  import statements are recognized by both compiler and JVM.
+
+4.#include<> statements is supporting static loading
+  import statement is supporting dynamic loading.
+
+5.By using single #include<> statement we are able to include only one header file
+  Ex:#include<stdio.h>
+     #include<conio.h>
+     #include<math.h>
+     #include<math.h,conio.h,stdio.h> -->invalid
+
+
+3.C and C++ are platform Dependent Programming languages,but Java is platform Independent Programming language:
+
+  By using single import statement we are able to include more than one calss or interface of the same package.
+  Ex:java.io.*
+     java.util.*
+If any programming language  allowes its application to perform compilation and exxecution on the same operation system then that programming laguage is  called as Platform Dpended Programming Language.Ex:C and C++
+
+If any programming Language allows its application to perform compilation is on the one Operating system and execution is on the another Operating system the that PL is called as Platform Independent Programming Language.
+Ex:Java  
+
+Q) What are the differences between .exe and .claas file?
+
+1..exe files is existed in C and C++
+  .class files are existed in java
+
+2..exe file is able to provide directly executable code
+  .class file is able to provide bytcode,it is not directly executable code, it is an intermediate code
+
+3..exe file i splatform dependent file
+  .class file is an Platorm Independent file
+ 
+4..exe file is able to provide less security
+  .class file is able to provide more security
+
+
+4.Pointers are existed in C and C++,but Pointers are not existed in Java
+--------------------------------------------------------------------------
+Pointer is a varibale it is able to store address location of the data strucuture,where data structure may be array, a variable, a struct,another pointer variable
+
+In general pointer variable are recognized and intialized at the time of compilation
+
+Q) Why pointer varibales are not existed in java
+----------------------------------------------------------------------------
+
+1.Pointer variables required memory allocation at the compilation time, that is Pointer varibales required static memory allocation.but java is following dynamic memory allocation
+
+2.Pointers are 	supported by Static Programming Languages.But java is Dynamic Programming Language.
+
+3.Pointer variables are very much suitable for the Platform Dependent Programming languages,But Java is Platfor Independent Programming Language
+
+4.Pointer variable are providing less security for the application data,but Java is very secure  Programming language ,it has to provide very good security for the application.
+
+5.Pointers are a bit confusion feature,nut java is a simple programming language ,it must not provide any connfusion for the developers
+
+Q) in C and C++ application a variable is referring a block of memory,so that variable is pointer variable, similarly ,in JAva applications,when we create an object for a particular class there also variable referring a block of memory[object],why dont we call that variable as Pointer and how can we say pointer are not existed in Java
+-------------------------------------------------------------------------------------------
+Ans:
+--------------------
+
+Q) What are the differences between Pointer variables and Reference variable
+
+Ans:
+
+1.Pointer variables are the variable,which are able to refer a block of memory by storing address location.
+
+Refrence variables are the variables,which are able to refer a block of memory [object] by storing Object reference value,where object referrence value is on Hexadecimal form of Hashcode,where Hashcode is an unique identity provided by Heap Manager to recognize the object individually
+
+2.Pointers are rquired static memory allocation
+  Reference variable required dynamic memory allocation
+
+3.Pointer variable are existed in C and C++
+  Reference variabl Are existed In java mainly
+-------------------------------------------------------------------------------------------
+
+5. Multiple inheritence is not existed in Java
+-----------------------------------------------
+Object Oriented Features
+1.Class
+2.Object
+3.Encapsulation
+4.Abstruction
+5.inheritence
+6.Polymorphism
+7.Message passing
+
+Inheritence:inheritence is a relation betwwen class,it will bring variable and methods from one class[super class] to another class[sub class].
+Adv:Code Resuability
+
+Types of Inheritence:
+-------------------------------------------------------
+1.Single Inheritence
+2.Multiple Inheritence
+
+3.Multi Level Inheritence
+4.Hierarichical Inheritence 
+5.Hybrid Iheritence
+
+1.Single inheritence :It is a releation between classes,it will bring variable and methods from only oone super class to one or more sub no of classes	
+
+2.Multiple Inheritence: It is a relation between classes ,it will bring variables and methods from more than one super classes to more than one no of sub classes.
+
+6.operator Overloading is not posiible in Java
+
+Polymorphism:
+
+Poly--> many Greek word
+Morphism--> Structures/forms
+
+If one thing existed in more than one form then it is called as Polymorphism
+
+adv:flexibility
+
+Types:
+1.static polymorphism
+2.dynamic polymorphism
+
+1.Static Polymorpism: If the polymorphosm is existed at compilation time then it is called as Static polymorphism
+Ex:Overloading
+
+2.Dynamic Polymorphism:If the polymorphism is existed at run time then it is called as Dynamic Polymorphism
+Ex:Methods Overriding
+
+Overloading:
+1.Method Overloading
+2.operator Overloading
+
+1.Method Overloading: If you declare more than one method with the same name and with the different parameter list.
+
+Ex:
+---------
+class A{
+   void add(int a, int b){
+	System.out.println(a+b);
+ }   
+   void add(float f1, float f2){
+	System.out.println(f1+f2);
+ }
+   void add(String str1,String str2){
+	System.out.println(str1+str2);
+ }
+}
+
+2.Operator Overloading:If we declare any operator with more than one functionality than it is called As Operator Overloading
+Ex:
+---------------
+
+int a =10;
+int b= 20;
+int c = a+ b;
+System.out.println(c); // + is arithmetic addition
+
+String str1="abc";
+String str2="def";
+String str3= str1 + str2;
+System.out.println(str3); // + String concatination
+
+Why operator overloading is not possible in java:
+
+1.Operator overloading is rarely used in application development
+2.If we declary more no of oprators with the more no of functionalities then Oprrator overloading feature will increase confusion to the developers while tracing which operator is for which operation. 	
+
+Note:In java ,as per java internal requirement ,Java mad esome operators like +,-,*,%....are declared as overloaded operators fixed functionalities,but ,Java has npt provided any env to perform operator ovrlaoding explicitly at dev level
+
+7.Destrucors are existed In C++ but not existed in Java
+-------------------------------------------------------------------------------------------
+Create Object ----> Constructor
+Destroying Object --> Destructor
+
+in Java:To destroy objects automatically and internally , Java has provided an implicit tool in the form of Garbage Collector
+
+In c++:no Garbage collector	kind of component ,wwhere developers must take explicitly responsibility to destroy objects,it is mandatory to use destructors feature in C++.
+
+8.C and C++ are following call by value and call by reference parameter passing mecahnism , but java is following only call by value parameter passing mechanism
+
+In any Pl, if we pass primitive data as parameter to the methods then the patameter passing mechanism is called as "Called by Value"
+
+In any PL,If we pass addredd location as parametre to the methods then the parameter passing callled mecahnism is called "Called by reference"
+
+IN C and C++ if we pass pointer variable as parameter to the methods thrn the parameter passing mechanism is called by reference , IN C and C++,pointer variable are able to store the loctions
+
+In case of Java ,even if we pass Object reference variable as parameters to the methods then the parameter passing mecahnism is called "Call by value" only,because  Object reference variable is not storing address locations,Object reference varivbale ius ale to store Object refrence value,where Object reference value i shexadecimal form of Hashcode where HAshcode is an unique identity provide by HEAp Manager in the form of an integer value
+
+9.IN C and C++,itegers will take integers will take 2 bytes of memory and characters will take 1  yte of mmeorybut In java integers will take 4 bytes of memory and characters will take 2 byte of memory
+-------------------------------------------------------------------------------------------In C and C++ memory allocation for the primirtive data types is not fixed ,it is variable , it is depending on the Operating System which we are using
+
+In java memory allocation for th primtive data types is fixed irrespective of the Opeating System which we used.
+
+byte -----1 byte
+short ----2 byte
+int ------4 byte
+long ----8 byte
+float ---- 4 byte
+double ----8 byte
+char -----2 byte
+boolean ---- 1 bit
+
+Q) In C and C++ , characters are able to take oly 1 byte of memory , but , then waht is the requirements for Java to assign 2 bytes of memory for characters?
+-------------------------------------------------------------------------------------------
+Ans:
+
+IN c And C++ all characters ------>ASCII-----> 1 byte
+in Java all characters ------> UNICODE---->2 bytes
+
+Q) What is UnICODEand what is requirement in Java?
+Ans:
+-------------------------------------------------
+
+UNICODE -----> character represantation -----> represent all the alphabet from all the natural languages like English,Hindi,UZbek... it able to provide very good internationalization support In java Applications
+
+
+Note: Designing Java application as per Local convention is called INternationalization
+ 
+
+		
